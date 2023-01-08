@@ -1,0 +1,41 @@
+body {
+    background-color: getColor('primary-bgd');
+    color: getColor('primary-text');
+    max-width: 1600px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    margin: 0 auto;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0 0;
+}
+
+textarea,
+select,
+input,
+button {
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

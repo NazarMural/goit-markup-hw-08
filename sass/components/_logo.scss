@@ -1,0 +1,42 @@
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.19;
+    color: getColor('secondary-text');
+}
+
+.logo__accent {
+    color: getColor('accent')
+}
+
+.logo-footer {
+    display: inline-block;
+    color: #FFFFFF;
+    text-shadow: none;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+// .logo {
+//     font-family: Raleway, sans-serif;
+//     font-weight: 700;
+//     font-size: 26px;
+//     line-height: 1.19;
+//     color: #000000;
+// }
+
+// .logo__accent {
+//     color: getColor('accent')
+// }
+
+// .logo-footer {
+//     display: inline-block;
+//     color: #FFFFFF;
+//     text-shadow: none;
+
+//     margin-bottom: 20px;
+// }
