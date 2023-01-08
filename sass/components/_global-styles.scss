@@ -1,7 +1,7 @@
 body {
     background-color: getColor('primary-bgd');
     color: getColor('primary-text');
-    max-width: 1600px;
+    max-width: 480px;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -35,7 +35,7 @@ button {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 }
