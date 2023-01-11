@@ -22,11 +22,17 @@
     <title>Студія</title>
   </head>
   <body>
+    <!-- Хедер -->
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html" lang="en"
           ><span class="logo__accent">Web</span>Studio</a
         >
+        <button type="button" class="menu-button">
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
           <ul class="site-nav">
             <li class="site-nav__list">
@@ -65,11 +71,6 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-button">
-          <svg width="40" height="40">
-            <use href="./images/sprite.svg#icon-menu"></use>
-          </svg>
-        </button>
       </div>
     </header>
     <main>
@@ -80,6 +81,472 @@
           Замовити послугу
         </button>
       </section>
+      <!--Перелік особливостей компанії-->
+      <section class="section feature-section">
+        <!--Сховається при роботі з CSS-->
+        <!-- <h2 class="temp-section-title">Особливості компанії</h2> -->
+        <div class="container">
+          <ul class="feature-list">
+            <li class="feature-list__item">
+              <div class="feature-list__background-icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="feature-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="feature-list__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__background-icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature-list__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="feature-list__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__background-icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="feature-list__title">ПЛАНУВАННЯ</h3>
+              <p class="feature-list__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="feature-list__item">
+              <div class="feature-list__background-icon">
+                <svg width="70" height="70">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="feature-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="feature-list__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Чим займається компанія-->
+      <section class="section section-work">
+        <div class="container">
+          <h2 class="section-title">Чим ми займаємося</h2>
+          <ul class="work-list">
+            <li class="work-list__list">
+              <img
+                class="work-list__img"
+                src="./images/programming.jpg"
+                alt="Процес програмування сайту"
+                width="370"
+              />
+              <h3 class="work-list__title">Десктопні додатки</h3>
+            </li>
+            <li class="work-list__list">
+              <img
+                class="work-list__img"
+                src="./images/adaptation.jpg"
+                alt="Процес адаптації сайту"
+                width="370"
+              />
+              <h3 class="work-list__title">Мобільні додатки</h3>
+            </li>
+            <li class="work-list__list">
+              <img
+                class="work-list__img"
+                src="./images/design.jpg"
+                alt="Процес створення дизайну сайту"
+                width="370"
+              />
+              <h3 class="work-list__title">Дизайнерські рішення</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Наша команда-->
+      <section class="section section-worker">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="worker-list">
+            <li class="worker-list__item">
+              <img
+                class="worker-list__img"
+                src="./images/igor-photo.jpg"
+                alt="Фото Ігора Дем'янченка"
+              />
+              <h3 class="worker-list__name">Ігор Дем'яненко</h3>
+              <p class="worker-list__profession" lang="en">Product Designer</p>
+              <ul class="sn-worker-list">
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.instagram.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://twitter.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.facebook.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.linkedin.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="worker-list__item">
+              <img
+                class="worker-list__img"
+                src="./images/olga-photo.jpg"
+                alt="Фото Ольги Рєпіної"
+              />
+              <h3 class="worker-list__name">Ольга Рєпіна</h3>
+              <p class="worker-list__profession" lang="en">
+                Frontend Developer
+              </p>
+              <ul class="sn-worker-list">
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.instagram.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://twitter.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.facebook.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.linkedin.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="worker-list__item">
+              <img
+                class="worker-list__img"
+                src="./images/mykola-photo.jpg"
+                alt="Фото Миколи Тарасова"
+              />
+              <h3 class="worker-list__name">Микола Тарасов</h3>
+              <p class="worker-list__profession" lang="en">Marketing</p>
+              <ul class="sn-worker-list">
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.instagram.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://twitter.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.facebook.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.linkedin.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="worker-list__item">
+              <img
+                class="worker-list__img"
+                src="./images/mykhailo-photo.jpg"
+                alt="Фото Михайла Єрмакова"
+              />
+              <h3 class="worker-list__name">Михайло Єрмаков</h3>
+              <p class="worker-list__profession" lang="en">UI Designer</p>
+              <ul class="sn-worker-list">
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.instagram.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://twitter.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.facebook.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="sn-worker-list__link"
+                    target="_blank"
+                    href="https://www.linkedin.com"
+                  >
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Постійні клієнти -->
+      <section class="section clients-section">
+        <div class="container">
+          <h2 class="section-title">Постійні клієнти</h2>
+          <ul class="clients-list">
+            <li class="clients-list__item">
+              <a class="clients-list__link" target="_blank" href="">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#icon-logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" target="_blank" href="">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#icon-logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" target="_blank" href="">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#icon-logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" target="_blank" href="">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#icon-logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" target="_blank" href="">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#icon-logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a class="clients-list__link" target="_blank" href="">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#icon-logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <!--Контакти-->
+        <div class="footer-contacts">
+          <a class="logo logo-footer" href="./index.html" lang="en"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <address>
+            <p class="footer-contacts__address">
+              м. Київ, пр-т Лесі Українки, 26
+            </p>
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-list__list">
+                <a
+                  class="footer-contacts-list__link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contacts-list__list">
+                <a class="footer-contacts-list__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!--Соціальні мережі-->
+        <div class="footer-sn">
+          <h2 class="footer-sn__title">Приєднуйтесь</h2>
+          <ul class="footer-sn-list">
+            <li>
+              <a
+                class="footer-sn-list__link"
+                target="_blank"
+                href="https://www.instagram.com"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-sn-list__link"
+                target="_blank"
+                href="https://twitter.com"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-sn-list__link"
+                target="_blank"
+                href="https://www.facebook.com"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-sn-list__link"
+                target="_blank"
+                href="https://www.linkedin.com"
+              >
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Розсилка-->
+        <div class="mailing">
+          <h2 class="mailing__title">Підпишіться на розсилку</h2>
+          <form>
+            <input
+              type="email"
+              class="mailing__input"
+              name="mailing-mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="mailing__button">
+              <span class="mailing__button-text">Підписатися</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

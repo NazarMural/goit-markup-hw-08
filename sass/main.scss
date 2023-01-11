@@ -1,8 +1,6 @@
-@import './utils/vars';
-@import './components/global-styles';
-
-@import './components/header';
-@import './components/logo';
-
-
-@import './components/hero';
+//utils
+@import './utils/index.scss';
+//base
+@import './base/index';
+//components
+@import './components/index.scss';
