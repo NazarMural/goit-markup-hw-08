@@ -16,9 +16,17 @@
     height: 50px;
     width: 100%;
 
-    display: inline-flex;
-    align-items: center;
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+        display: block;
+        width: 450px;
+    }
 
+    @media screen and (min-width: $desktop) {
+        display: inline-flex;
+        align-items: center;
+        width: 350px;
+    }
+    
     padding: 0;
     padding-left: 16px;
     margin-right: 12px;
@@ -44,7 +52,9 @@
     letter-spacing: 0.06em;
     color: #FFFFFF;
 
-    margin-top: 20px;
+    @media screen and (max-width: $max-tablet) {
+        margin-top: 20px;
+    }
 
     &:hover,
     &:focus {

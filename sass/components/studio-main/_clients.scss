@@ -1,17 +1,28 @@
 .clients-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
+
+    @media screen and (max-width: $max-tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .clients-section {
     padding-top: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+    }
 }
 
 .clients-list__item {
-    width: calc((100%)/2 - 15px) ;
+    width: calc((100%)/2 - 15px);
     height: 92px;
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 60px)/3);
+    }
 }
 
 .clients-list__link {

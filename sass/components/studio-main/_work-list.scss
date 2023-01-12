@@ -1,8 +1,38 @@
 .section-work {
-    display: none;
+    @media screen and (max-width: $max-tablet) {
+        display: none;    
+    }
 }
 
-
+@media screen and (min-width: $desktop) {
+    .work-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .work-list__list {
+        position: relative;
+    }
+    
+    .work-list__img {
+        display: block;
+    }
+    
+    .work-list__title {
+        position: absolute;
+        bottom: 0;
+    
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 1.14;
+        text-transform: uppercase;
+        padding: 27px 0;
+    
+        background-color: rgba(47, 48, 58, 0.8);
+        color: #FFFFFF;
+    }
+}
 // .work-list {
 //     display: flex;
 //     justify-content: space-between;

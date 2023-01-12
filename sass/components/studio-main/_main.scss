@@ -4,10 +4,19 @@
     text-align: center;
     color: getColor('secondary-text');
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        padding-bottom: 50px;
+    }
 }
 
 .section {
     padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 94px;
+    }
 }
 
 // .section-title {

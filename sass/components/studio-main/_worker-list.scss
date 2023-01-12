@@ -2,6 +2,24 @@
     background-color: getColor('secondary-bgd');
 
     padding-top: 60px;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 94px;
+    }
+}
+
+.worker-list {
+    @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
 }
 
 .worker-list__item {
@@ -14,8 +32,14 @@
 
     padding-bottom: 24px;
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: $max-mobile) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100%)/2 - 15px);
     }
 }
 

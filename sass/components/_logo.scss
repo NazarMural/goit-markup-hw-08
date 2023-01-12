@@ -10,6 +10,14 @@
     color: getColor('accent')
 }
 
+.logo-header {
+    margin-right: 87px;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 92px;
+    }
+}
+
 .logo-footer {
     display: inline-block;
     color: #FFFFFF;

@@ -1,5 +1,7 @@
 @import './header/header';
 @import './logo';
+@import './header/navigation';
+@import './header/contacts';
 
 @import './studio-main/main';
 @import './studio-main/hero';
@@ -12,3 +14,7 @@
 @import './footer/footer-contacts';
 @import './footer/footer-sn';
 @import './footer/mailing';
+
+@import './portfolio-main/main';
+@import './portfolio-main/filter-project';
+@import './portfolio-main/projects';

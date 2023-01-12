@@ -9,6 +9,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $desktop) {
+        padding: 200px 0;
+    }
 }
 
 .hero__title {
@@ -23,6 +27,11 @@
 
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop){
+        font-size: 44px;
+        max-width: 696px;
+    }
 }
 
 .hero__button {
@@ -45,6 +54,10 @@
 
     &:hover, &:focus {
         background-color: #188CE8;
+    }
+
+    @media screen and (min-width: $desktop) {
+        min-width: 216px;
     }
 }
 
