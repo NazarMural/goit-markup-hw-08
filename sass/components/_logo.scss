@@ -11,7 +11,9 @@
 }
 
 .logo-header {
-    margin-right: 87px;
+    @media screen and (min-width: $tablet) {
+        margin-right: 87px;
+    }
 
     @media screen and (min-width: $desktop) {
         margin-right: 92px;
