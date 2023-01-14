@@ -182,11 +182,36 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="worker-list">
             <li class="worker-list__item">
-              <img
-                class="worker-list__img"
-                src="./images/igor-photo.jpg"
-                alt="Фото Ігора Дем'янченка"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-image/mobile-person-1.jpg    1x,
+                    ./images/mobile-image/mobile-person-1@x2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-image/tablet-person-1.jpg    1x,
+                    ./images/tablet-image/tablet-person-1@x2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-image/desktop-person-1.jpg    1x,
+                    ./images/desktop-image/desktop-person-1@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="worker-list__img"
+                  src="./images/mobile-image/mobile-person-1.jpg"
+                  alt="Фото Ігора Дем'янченка"
+                />
+              </picture>
               <h3 class="worker-list__name">Ігор Дем'яненко</h3>
               <p class="worker-list__profession" lang="en">Product Designer</p>
               <ul class="sn-worker-list">
