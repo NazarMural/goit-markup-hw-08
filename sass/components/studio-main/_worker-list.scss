@@ -41,6 +41,10 @@
     @media screen and (min-width: $tablet) {
         width: calc((100%)/2 - 15px);
     }
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 30px;
+    }
 }
 
 .worker-list__img {

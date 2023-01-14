@@ -28,12 +28,17 @@
         <a class="logo logo-header" href="./index.html" lang="en"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <button type="button" class="menu-button">
+        <button type="button" class="menu-button js-open-menu">
           <svg width="40" height="40">
             <use href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="header-menu">
+        <div class="header-menu js-menu-container">
+          <button type="button" class="menu-button menu-button-close js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
           <nav class="header-nav">
             <ul class="site-nav">
               <li class="site-nav__list">
@@ -72,6 +77,28 @@
                 </svg>
                 +38 096 111 11 11
               </a>
+            </li>
+          </ul>
+          <ul class="header-sn">
+            <li class="header-sn__item">
+              <a class="header-sn__link" href="#" aria-label="Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="header-sn__item">
+              <a class="header-sn__link" href="#" aria-label="Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="header-sn__item">
+              <a class="header-sn__link" href="#" aria-label="Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="header-sn__item">
+              <a class="header-sn__link" href="#" aria-label="Linkedin"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </div>
@@ -262,11 +289,36 @@
               </ul>
             </li>
             <li class="worker-list__item">
-              <img
-                class="worker-list__img"
-                src="./images/olga-photo.jpg"
-                alt="Фото Ольги Рєпіної"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-image/mobile-person-2.jpg    1x,
+                    ./images/mobile-image/mobile-person-2@x2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-image/tablet-person-2.jpg    1x,
+                    ./images/tablet-image/tablet-person-2@x2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-image/desktop-person-2.jpg    1x,
+                    ./images/desktop-image/desktop-person-2@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="worker-list__img"
+                  src="./images/mobile-image/mobile-person-2.jpg"
+                  alt="Фото Ігора Дем'янченка"
+                />
+              </picture>
               <h3 class="worker-list__name">Ольга Рєпіна</h3>
               <p class="worker-list__profession" lang="en">
                 Frontend Developer
@@ -319,11 +371,36 @@
               </ul>
             </li>
             <li class="worker-list__item">
-              <img
-                class="worker-list__img"
-                src="./images/mykola-photo.jpg"
-                alt="Фото Миколи Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-image/mobile-person-3.jpg    1x,
+                    ./images/mobile-image/mobile-person-3@x2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-image/tablet-person-3.jpg    1x,
+                    ./images/tablet-image/tablet-person-3@x2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-image/desktop-person-3.jpg    1x,
+                    ./images/desktop-image/desktop-person-3@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="worker-list__img"
+                  src="./images/mobile-image/mobile-person-3.jpg"
+                  alt="Фото Ігора Дем'янченка"
+                />
+              </picture>
               <h3 class="worker-list__name">Микола Тарасов</h3>
               <p class="worker-list__profession" lang="en">Marketing</p>
               <ul class="sn-worker-list">
@@ -374,11 +451,36 @@
               </ul>
             </li>
             <li class="worker-list__item">
-              <img
-                class="worker-list__img"
-                src="./images/mykhailo-photo.jpg"
-                alt="Фото Михайла Єрмакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-image/mobile-person-4.jpg    1x,
+                    ./images/mobile-image/mobile-person-4@x2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/tablet-image/tablet-person-4.jpg    1x,
+                    ./images/tablet-image/tablet-person-4@x2.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/desktop-image/desktop-person-4.jpg    1x,
+                    ./images/desktop-image/desktop-person-4@x2.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  class="worker-list__img"
+                  src="./images/mobile-image/mobile-person-4.jpg"
+                  alt="Фото Ігора Дем'янченка"
+                />
+              </picture>
               <h3 class="worker-list__name">Михайло Єрмаков</h3>
               <p class="worker-list__profession" lang="en">UI Designer</p>
               <ul class="sn-worker-list">
@@ -577,5 +679,68 @@
         </div>
       </div>
     </footer>
+    <!-- Модалка -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__background-dagger" type="button" data-modal-close>
+          <svg height="11" width="11">
+            <use href="./images/sprite.svg#icon-dagger"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form class="form">
+          <label class="form__field">
+            <span class="form__label">Ім'я</span>
+            <input type="text" class="form__input" name="name" />
+            <svg class="form__icon" height="18" width="18">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="form__field">
+            <span class="form__label">Телефон</span>
+            <input type="tel" class="form__input" name="tel" />
+            <svg class="form__icon" height="18" width="18">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="form__field">
+            <span class="form__label">Пошта</span>
+            <input type="email" class="form__input" name="mail" />
+            <svg class="form__icon" height="18" width="18">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="form__field">
+            <span class="form__label">Коментар</span>
+            <textarea
+              class="form__textarea"
+              name="comment"
+              cols="30"
+              rows="10"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="form__checkbox">
+            <input
+              type="checkbox"
+              class="form__confirmation"
+              name="confirmation"
+            />
+            <span class="form__confirmation-icon"></span>
+            <p class="form__confirmation-text">
+              Погоджуюся з розсилкою та приймаю
+              <a href="" target="_blank" class="form__confirmation-link"
+                >Умови договору</a
+              >
+            </p>
+          </label>
+          <div class="form__field-button">
+            <button type="submit" class="form__button">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

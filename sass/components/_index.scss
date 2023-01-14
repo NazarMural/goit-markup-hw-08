@@ -2,6 +2,7 @@
 @import './logo';
 @import './header/navigation';
 @import './header/contacts';
+@import './header/menu';
 
 @import './studio-main/main';
 @import './studio-main/hero';
@@ -18,3 +19,6 @@
 @import './portfolio-main/main';
 @import './portfolio-main/filter-project';
 @import './portfolio-main/projects';
+
+@import './studio-main/modal';
+@import './studio-main/form';
