@@ -75,7 +75,11 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 13px;
+
+    @media screen and (min-width: $desktop){
+       margin-left: 12px; 
+    }
+    
 }
 
 .form__confirmation {
@@ -103,11 +107,15 @@
 
 .form__confirmation-text {
     display: inline-block;
-
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
 
     padding-left: 8px;
 
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .form__confirmation-link {
